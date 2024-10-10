@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="card-header">
+        <h3 class="cart-title h1" id="title">Todo App 2</h3>
+    </div>
+
+    <ul id="task-list">
+        <li>
+            Görev 1
+        </li>
+        <li>
+            Görev 2
+        </li>
+        <li>
+            Görev 3
+        </li>
+    </ul>
+
+    <script>
+        let sonuc;
+
+        sonuc = document.getElementById("title");
+        console.log(sonuc);
+        sonuc = document.getElementById("title").id;
+        console.log(sonuc);
+        sonuc = document.getElementById("title").className;
+        console.log(sonuc);
+        sonuc = document.getElementById("title").classList;
+        console.log(sonuc[1]);
+
+        document.getElementById("title").style.fontSize = "103px";
+        document.getElementById("title").style.color = "red";
+     //document.getElementById("title").style.display = "none";
+
+        
+        document.getElementById("title").innerText = "Todo App555";
+         document.getElementById("title").innerHTML = "<p>Todo App</p>";
+
+        sonuc = document.querySelector("#title");
+        console.log(sonuc);
+        sonuc = document.querySelector(".card-header");
+        //console.log(sonuc);
+        sonuc = document.querySelector("ul");
+        console.log(sonuc);
+        sonuc = document.querySelector("li");        
+        sonuc = document.querySelector("li:first-child"); 
+        console.log(sonuc);        
+        sonuc = document.querySelector("li:last-child");     
+        console.log(sonuc);     
+        sonuc = document.querySelector("li:nth-child(2)");          
+
+      
+    </script>
+
+</body>
+</html>
